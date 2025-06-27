@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.book-card {
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.flip-book {
+  perspective: 1500px;
+}
+
+.flip-book-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-book:hover .flip-book-inner {
+  transform: rotateY(15deg);
+}
